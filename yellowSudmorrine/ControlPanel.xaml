@@ -1,0 +1,32 @@
+﻿<Window x:Class="yellowSudmorrine.ControlPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:yellowSudmorrine"
+        mc:Ignorable="d"
+        Title="ControlPanel" Height="450" Width="300" ResizeMode="NoResize">
+
+    <Grid Background="#FFC8C8C8">
+        <Button Click ="ChangeDeep_Up" Content="Up" HorizontalAlignment="Left" Margin="92,246,0,0" VerticalAlignment="Top" Width="120" Height="28" Background="#FF1A8BE8" Foreground="White"/>
+        <Button Click="ChangeDeep_Down" Content="Down" HorizontalAlignment="Left" Margin="92,312,0,0" VerticalAlignment="Top" Width="120" Height="28" Foreground="White" Background="Red"/>
+        <Button Content="&lt;" HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top" Width="120" Height="28"
+                Background="#FF3ADC07" Foreground="#FFF4E7E7" FontSize="18"  Click="ChangeSpeed_Minus"
+                />
+        <Button Content="&gt;"  HorizontalAlignment="Left" Margin="164,279,0,0" VerticalAlignment="Top" Width="120" Height="28" 
+        Background="#FFEAD41A" Foreground="White" FontSize="20"
+        Click="ChangeSpeed_Plus" CommandParameter="10"/>
+        <Label Name="speedLabel" HorizontalAlignment="Left" Margin="148,10,0,0" VerticalAlignment="Top" Width="136" Height="32" Background="#FFBABABA" Foreground="#FFFDFDFD"/>
+        <Label Name="DeepLabel" Content="" HorizontalAlignment="Left" Margin="148,159,0,0" VerticalAlignment="Top" Width="136" Height="32" Background="#FFBABABA" Foreground="White"/>
+        <Button Content="Ручник" HorizontalAlignment="Left" Margin="113,359,0,0" VerticalAlignment="Top" Width="75"
+                Click ="Handbrake"/>
+        <Label Content="XSpeed" HorizontalAlignment="Left" Margin="42,10,0,0" VerticalAlignment="Top" Width="101" Height="37"/>
+        <Label Content="Yposition" HorizontalAlignment="Left" Margin="42,159,0,0" VerticalAlignment="Top" Width="101" Height="37"/>
+        <Label Name="YSpeed" HorizontalAlignment="Left" Margin="148,52,0,0" VerticalAlignment="Top" Width="136" Height="32" Background="#FFBABABA" Foreground="#FFFDFDFD"/>
+        <Label Content="YSpeed" HorizontalAlignment="Left" Margin="42,52,0,0" VerticalAlignment="Top" Width="101" Height="37"/>
+        <Label Name="XCoord" Content="" HorizontalAlignment="Left" Margin="148,117,0,0" VerticalAlignment="Top" Width="136" Height="32" Background="#FFBABABA" Foreground="White"/>
+        <Label Content="Xposition" HorizontalAlignment="Left" Margin="42,117,0,0" VerticalAlignment="Top" Width="101" Height="37"/>
+
+    </Grid>
+
+</Window>
